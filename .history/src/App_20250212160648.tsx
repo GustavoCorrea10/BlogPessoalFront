@@ -9,10 +9,8 @@ import Cadastro from './pages/cadastro/Cadastro'
 function App() {
   return (
     <>
-    {/* Routes é igua o switch case, ele é o switch que fica observando a url 
+    {/* BrowserRouter é igua o switch case, ele é o switch que fica observando a url 
     e o route é o case, vai cair em tal pagina de acordo com a /url*/}
-
-    {/* e o BrowserRouter é para bilitar o processo de rotas, e ele envolve todas as tags de rotas  */}
         <BrowserRouter>
 
           <Navbar />
