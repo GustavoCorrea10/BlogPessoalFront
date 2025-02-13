@@ -10,7 +10,6 @@ import Cadastro from './pages/cadastro/Cadastro'
 function App() {
   return (
     <>
-    <AuthProvider>
     {/* Routes é igua o switch case, ele é o switch que fica observando a url 
     e o route é o case, vai cair em tal pagina de acordo com a /url*/}
 
@@ -28,7 +27,6 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
-        </AuthProvider>
     </>
   )
 }
