@@ -28,7 +28,7 @@ function Navbar() {
         navigate('/')  // 3. Redireciona o usuário para a página inicial ('/')
 
 
-        // Chama a função logout la na opção sair com o onclick, para quando clicar na opção sair, ele deslogar o usuario
+        // chama a função logout la na opção sair com o onclick, para quando clicar na opção sair, ele deslogar o usuario
     }
     
     return (
@@ -41,8 +41,8 @@ function Navbar() {
 
                     <div className='flex gap-4'>
                         Postagens
-                        <Link to='/temas' className='hover:underline'>Temas</Link>
-                        <Link to='/cadastrartema' className='hover:underline'>Cadastrar tema</Link>
+                        Temas
+                        Cadastrar tema
                         Perfil
                         <Link to='' onClick={logout} className='hover:underline'>Sair</Link>  
                     </div>

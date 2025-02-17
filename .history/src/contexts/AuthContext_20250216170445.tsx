@@ -72,7 +72,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
 //handleLogout tema função de limpar os dados do usuario
     function handleLogout() {
-        //limpa os dados do usuario
         setUsuario({
          id: 0,         // O ID do usuário é resetado para 0 (geralmente um valor que indica "não autenticado").
         nome: "",      // O nome do usuário é limpo.
@@ -83,15 +82,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
         })
     }
 
-
-    //<AuthContext.Provider> é onde define o que vai ser compartilhado com os outros componentes.
-    //Aqui, ele está compartilhando o estado do usuário, as funções de login e logout, e o estado de carregamento.
-    //value={{}} dentro do value voce coloca tudo o que quer que os outros componentes possam acessar
-
-    //{children}  Esse é o espaço onde o conteúdo que for passado dentro do componente AuthContext.Provider será mostrado. 
-    // Ou seja, se você colocar algum componente ou JSX dentro do AuthContext.Provider, isso será renderizado no lugar de {children}
-
-    //usamos o <AuthContext.Provider> no App.tsx para envolver todos os componentes, esses componentes serão mostrados na tela e ficam no lugar de children
     return (
         <AuthContext.Provider value={{ usuario, handleLogin, handleLogout, isLoading }}>
             {children}

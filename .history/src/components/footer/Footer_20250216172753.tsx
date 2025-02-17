@@ -2,8 +2,7 @@ import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react
 
 function Footer() {
 
-    let data = new Date().getFullYear() // new Date() cria um novo objeto de Date 
-                                        // getFullYear() ele retorna o ano atual 
+    let data = new Date().getFullYear() // aqui pega o ano atual utilizando o Date
 
     return (
         <>

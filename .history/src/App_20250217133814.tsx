@@ -8,7 +8,6 @@ import Login from './pages/login/Login'
 import Cadastro from './pages/cadastro/Cadastro'
 import ListaTemas from './components/temas/listatemas/ListaTemas'
 import FormTema from './components/temas/formtema/FormTema'
-import DeletarTema from './components/temas/deletartema/DeletarTema'
 
 function App() {
   return (

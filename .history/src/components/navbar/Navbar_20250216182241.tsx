@@ -9,26 +9,13 @@ function Navbar() {
     //agora o navigate tem todas as funções do useNavigate
     const navigate = useNavigate();
 
-
-
-//handleLogout remove a informações do usuario
-//useContext  é um hook usado para acessar o valor de um contexto
-//AuthContext é o contexto
-//esse codigo, desconecta o usuario
     const { handleLogout } = useContext(AuthContext)
-
-
-
-
 
     function logout() {
 
-        handleLogout()   // 1. Chama a função 'handleLogout' para realizar o logout (limpar os dados do usuário)
-        alert('O Usuário foi desconectado com sucesso!') // 2. Exibe uma mensagem de alerta informando que o usuário foi desconectado
-        navigate('/')  // 3. Redireciona o usuário para a página inicial ('/')
-
-
-        // Chama a função logout la na opção sair com o onclick, para quando clicar na opção sair, ele deslogar o usuario
+        handleLogout()
+        alert('O Usuário foi desconectado com sucesso!')
+        navigate('/')
     }
     
     return (
@@ -41,10 +28,10 @@ function Navbar() {
 
                     <div className='flex gap-4'>
                         Postagens
-                        <Link to='/temas' className='hover:underline'>Temas</Link>
-                        <Link to='/cadastrartema' className='hover:underline'>Cadastrar tema</Link>
+                        Temas
+                        Cadastrar tema
                         Perfil
-                        <Link to='' onClick={logout} className='hover:underline'>Sair</Link>  
+                        <Link to='' onClick={logout} className='hover:underline'>Sair</Link>
                     </div>
                 </div>
             </div>
